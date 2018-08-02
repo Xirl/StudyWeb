@@ -1,0 +1,18 @@
+/*
+* @Author: GZLX
+* @Date:   2017-12-20 13:53:39
+* @Last Modified by:   GZLX
+* @Last Modified time: 2017-12-20 13:56:00
+*/
+.two2{
+		 width:120px;
+	}
+	option{
+		border:none;
+	}
+.btn-danger{
+	background: #fff;
+	border: 1px solid #ccc;
+	color: #000;
+	font-weight: bold;
+}

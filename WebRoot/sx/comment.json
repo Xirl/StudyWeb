@@ -1,0 +1,22 @@
+[{
+	"id": "1",
+	"name": "logo1",
+	"img": "<img src='img/logoquan14567395793.png' height='50px' width='60px' alt=''>",
+	"content": "不错不错",
+	"response": "欢迎下次光临"
+},
+{
+	"id": "2",
+	"name": "logo2",
+	"img": "<img src='img/logoquan14667553328.png' height='50px' width='55px' alt=''>",
+	"content": "很好",
+	"response": "欢迎下次光临"
+},
+{
+	"id": "3",
+	"name": "logo3",
+	"img": "<img src='img/logoquan14740861884.png' height='50px' width='50px' alt=''>",
+	"content": "啦啦啦",
+	"response": "欢迎下次光临"
+}
+]

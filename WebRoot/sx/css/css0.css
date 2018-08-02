@@ -1,0 +1,234 @@
+.clear:after {
+    display: block;
+    content: '';
+    clear: both;
+}
+
+body {
+    position: relative;
+}
+
+a {
+    color: #fff;
+}
+
+a:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+.nav-top {
+    /*background: #8c8c8c;*/
+    border: none;
+    border-bottom: 1px solid #c9aa5f;
+    border-radius: 0;
+    margin-bottom: 0;
+    background: #fecbba;
+}
+
+.navbar-tittle {
+    padding: 15px;
+}
+
+
+.sidebar-toggle-box {
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.yu {
+    width: 20px;
+    height: 20px;
+    background: url(../img/panyu2.png);
+}
+
+.logo a {
+    color: #fff;
+    text-decoration: none;
+}
+.skin{
+ margin-right:10%;
+}
+.skin button{
+    width:20px;
+    height:20px;
+    box-shadow:-0.5px 0 1px #000 inset;
+    border-radius: 50%;
+    outline: none;
+    float:left;
+    margin-left:10px;
+    list-style:none;
+    margin-top:15px;
+}
+.skin button:nth-child(1){
+    background:#fecbba;
+}
+.skin button:nth-child(2){
+    background:#28af63;
+}
+.skin button:nth-child(3){
+    background:#e9724c;
+}
+.skin button:nth-child(4){
+    background:#a5dff9;
+}
+.skin button:nth-child(5){
+    background:#fff000;
+}
+.login a {
+    color: #6db3be;
+}
+
+i {
+    margin-right: 5px;
+}
+
+.navbar-main {
+    margin-left: 210px;
+}
+
+.navbar-main .form-control {
+    border-radius: 50px;
+}
+
+.navbar-right {
+    margin: 10px;
+}
+
+.logout a {
+    color: #6db3be;
+}
+
+
+.main {
+    margin: 0;
+}
+
+.navbar-side {
+    position: fixed;
+    width: 200px;
+    height: 100%;
+    background: #006a83;
+    border: none;
+    border-radius: 0;
+    /*padding-top: 50px;*/
+}
+
+.navbar-side a {
+    color: #fff;
+}
+
+.logo-picture {
+    width: 86px;
+    margin: 30px auto 10px auto;
+}
+
+.logo-picture img {
+    width: 86px;
+    height: 45px;
+}
+
+.logo-down {
+    text-align: center;
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+.sidebar-collapse>ul>li {
+    margin: 5px;
+}
+
+.sidebar-collapse li.active {
+    background: #6db3be;
+}
+
+.dropdown li {
+    background: #006a83;
+}
+
+.navbar-side .sidebar-collapse>ul>li>a:focus,
+.navbar-side .sidebar-collapse>ul>li>a:hover {
+    background: #6db3be;
+}
+
+
+.dropdown li>a:focus,
+.dropdown li>a:hover {
+    font-size: 16px;
+    background: #006a83;
+}
+
+#content-main {
+    height: 100%;
+    overflow: hidden;
+}
+
+.J_mainContent {
+    margin-left: 200px;
+}
+
+iframe {
+    width: 100%;
+    height: 100%;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+.top {
+	height: 50px;
+}
+
+.main {
+    height: calc(100% - 50px);
+   /*height: 100%;*/
+}
+
+body.none-sidebar .navbar-side {
+    display: none;
+    width: 100%;
+}
+
+body.none-sidebar .J_mainContent {
+    margin-left: 0;
+}
+
+body.big-sidebar .J_mainContent {
+    margin-left: 0;
+}
+
+body.big-sidebar .content {
+    display: none;
+}
+
+body.big-sidebar .navbar-side {
+    display: none;
+    /* width: 100%; */
+}
+
+body.big-sidebar .sidebar-toggle-box .yu{
+    background: url(../img/panyu1.png);
+}
+
+@media (min-width: 768px) {
+    .navbar-header {
+        width: 200px;
+        height: 50px;
+    }
+
+    .login {
+        display: none;
+    }
+
+    /*body.navbar-side {
+		display: block;
+	}*/
+}
+
+@media (max-width: 768px) {
+    .navbar-main {
+        display: none;
+    }
+}

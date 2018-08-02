@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<struts>
+	<package name="sx" namespace="/sx" extends="struts-default">
+		<action name="getTheme" class="com.sx.action.ThemeAction"
+			method="getTheme">
+			<result name="success" type="dispatch">/MyJsp.jsp</result>
+		</action>
+		<action name="getComment" class="com.sx.action.CommentAction" method="getComment">
+			<result name="success" type="dispatch">/note.jsp</result>
+			<result name="input" type="redirect">/MyJsp.jsp</result>
+		</action>
+		<action name="getImg" class="com.sx.action.ImgAction"
+			method="getImg">
+			<result name="success" type="dispatch">/MyJsp.jsp</result>
+		</action>
+		<action name="getReply" class="com.sx.action.ReplyAction"
+			method="getReply">
+			<result name="success" type="dispatch">/MyJsp.jsp</result>
+		</action>
+		<action name="getType" class="com.sx.action.TypeAction"
+			method="getType">
+			<result name="success" type="dispatch">/MyJsp.jsp</result>
+		</action>
+		<action name="verifyUser" class="com.sx.action.VerifyAction"
+			method="verifyUser">
+			<result name="success" type="dispatch">/MyJsp.jsp</result>
+		</action>
+		<action name="getTags" class="com.sx.action.TagsAction"
+			method="getTags">
+			<result name="success" type="dispatch">/MyJsp.jsp</result>
+		</action>
+	</package>
+</struts>

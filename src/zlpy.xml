@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<struts>
+    <!--
+        package：包，用于对Action进行封装
+        name：包名，根元素下可以有多个包，彼此不能重名
+        extends：继承，用于指定继承的包，相当于将继承包下的配置信息复制到当前包
+        namespace：命名空间，用于规定Action的访问路径，必须“/”开头    
+    -->
+    <package name="goods" namespace="/zlpy" extends="struts-default">
+        <!--action：业务控制器，用于注册业务控制器组件
+            name：action名称，用于规定Action的访问路径
+            class：业务控制器组件，用于指定业务控制器对应的类
+            method：方法，用于指定访问当前action时要调用的方法
+            *请求URL：http://ip:port/projectName/namespace/ActionName.action
+        -->
+       
+       <!--  <action name="homePage" class="com.zlpy.action.YAction" method="homePage">
+        	<result name="success" type="dispatch">/homePage.jsp</result>
+        </action > -->
+    
+        <action name="questionPaper" class="com.zlpy.action.YAction" method="questionPaper">
+        	<result name="success" type="dispatch">/questionPaper.jsp</result>
+        	<result name="input" type="dispatch">/myPaper.jsp</result>
+        </action>
+       
+        <action name="topic" class="com.zlpy.action.YAction" method="topic">
+        	<result name="success" type="dispatch">/topic.jsp</result>
+        </action>
+        
+        <action name="topicType" class="com.zlpy.action.YAction" method="topicType">
+       		 <result name="success" type="dispatch">/createTopic.jsp</result>
+       		 <result name="input" type="dispatch">/newPaper.jsp</result>
+        </action>
+        
+       <action name="topicShow" class="com.zlpy.action.YAction" method="topicShow">
+       		<result name="success" type="dispatch">/topic.jsp</result>
+       </action>
+       
+       <action name="lookSolu" class="com.zlpy.action.YAction" method="lookSolu">
+       		<result name="success" type="dispatch">/topic.jsp</result>
+       </action>
+       
+       
+       
+       <action name="findQue" class="com.zlpy.action.YAction" method="findQue">
+       		<result name="success" type="dispatch">/homePage.jsp</result>
+       </action>
+       
+       <action name="topicCount" class="com.zlpy.action.YAction" method="topicCount">
+       </action>
+       
+       
+       
+       <action name="test" class="com.zlpy.action.YAction" method="test">
+       </action>
+       
+       <action name="down" class="com.zlpy.action.DowenLoadAction" method="down">
+       </action>
+       
+       <action name="downpaper" class="com.zlpy.action.DowenLoadAction" method="downpaper">
+       </action>
+       
+       <action name="download" class="com.zlpy.action.YAction" method="download">
+       </action>
+       
+    </package>
+    
+    <package name="topic" namespace="../ljc" extends="struts-default">
+    
+   	 <action name="randomTopic" class="com.zlpy.action.YAction" method="randomTopic">
+       		<result name="success" type="redirect">/personalinfo.jsp</result>
+       </action>
+       
+       <action name="insertTopic" class="com.zlpy.action.YAction" method="insertTopic">
+       		<result name="success" type="redirect">/personalinfo.jsp</result>
+       </action >
+       
+         <action name="updataSolu" class="com.zlpy.action.YAction" method="updataSolu">
+       		<result name="success" type="redirect">/personalinfo.jsp</result>
+       </action >
+       
+    </package>
+    
+    <package name="page" namespace="/ljc" extends="struts-default">
+    <action name="homepage" class="com.ljc.action.DataAction" method="homepage">
+    	 		<result name="success" type="redirect">/testhomepage.jsp</result>
+    	 </action>
+    </package>
+</struts>

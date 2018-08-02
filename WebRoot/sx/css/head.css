@@ -1,0 +1,158 @@
+@CHARSET "UTF-8";
+
+.other_bn button,.r_bn button,.rr_bn button,.rrr_bn button,btn_return button{
+color: #fff;
+background-color: #286090;
+border-color: #204d74;
+	padding: 6px 12px;
+	margin-bottom: 0;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 1.42857143;
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: middle;
+	-ms-touch-action: manipulation;
+	touch-action: manipulation;
+	cursor: pointer;
+	-moz-user-select: true;
+	-ms-user-select: true;
+	user-select: none;
+	background-image: none;
+	border: 1px solid transparent;
+	border-radius: 4px;
+}
+#do_themeid{ margin-top:1%;background-color:#f0ad4e;border:2px solid transparent;border-radius: 4px;
+}
+.btn_rreply,.btn_comment{
+float:right;
+color: #fff;
+background-color: #286090;
+border-color: #204d74;
+}
+.queryReply{
+	float:right;
+}
+.Rtheme{
+	margin-top:8px;
+}
+.delete_btn,.reply_in{
+	font-size:0.8em;
+}
+.con{
+	font-size:1.2em;
+}
+.btn_comm,.btn_theme{
+	display: inline-block;
+	padding: 6px 12px;
+	margin-bottom: 0;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 1.42857143;
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: middle;
+	-ms-touch-action: manipulation;
+	touch-action: manipulation;
+	cursor: pointer;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	background-image: none;
+	border: 1px solid transparent;
+	border-radius: 4px;
+}
+
+
+
+dn_comm_repley_buttoms button,.dn_repp button{
+	color: #fff;
+background-color: #286090;
+border-color: #204d74;
+	display: inline-block;
+	padding: 6px 12px;
+	margin-bottom: 0;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 1.42857143;
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: middle;
+	touch-action: manipulation;
+	cursor: pointer;
+
+	user-select: none;
+	background-image: none;
+	border: 1px solid transparent;
+	border-radius: 4px;
+}
+.myBtn button{
+	color: #fff;
+background-color: red;
+border-color: #204d74;
+	display: inline-block;
+	padding: 6px 12px;
+	margin-bottom: 0;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 1.42857143;
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: middle;
+	touch-action: manipulation;
+	cursor: pointer;
+
+	user-select: none;
+	background-image: none;
+	border: 1px solid transparent;
+	border-radius: 4px;
+}
+
+
+.talk_body{
+	margin-left:4%;
+}
+.Rtime,.time{
+	float:right;
+}
+.body_talk,.Rcomment_c{
+	font-size:0.8em;
+}
+
+.reply_in span{
+	float:right;
+	
+}
+
+.modal-dialog { 
+    position: absolute; 
+    top: 0; 
+    bottom: 0; 
+    left: 0; 
+    right: 0; 
+} 
+
+.modal-content { 
+    /*overflow-y: scroll; */ 
+    position: absolute; 
+    top: 0; 
+    bottom: 0; 
+    width: 100%; 
+} 
+
+.modal-body { 
+    overflow-y: scroll; 
+    position: absolute; 
+    top: 55px; 
+    bottom: 65px; 
+    width: 100%; 
+} 
+
+.modal-header .close {margin-right: 15px;} 
+
+.modal-footer {
+    position: absolute; 
+    width: 100%; 
+    bottom: 0; 
+}

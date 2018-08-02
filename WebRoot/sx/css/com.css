@@ -1,0 +1,95 @@
+.breadcrumb{
+    margin-bottom: 0;
+    border-radius: 0;
+    height: 37.6px;
+    margin-bottom: 10px;
+}
+input{
+    border: 1px solid #ddd;
+    outline: none;
+}
+label{
+    display: inline-block;
+    width: 100px;
+    text-align: right;
+    margin-right: 20px;
+}
+#home{
+    padding: 10px;
+    padding-left: 50px;
+}
+.form-group .filein{
+    display: inline-block;
+    border: none;
+}
+#text{
+    vertical-align: top;
+}
+.bt{
+    padding-left: 40px;
+}
+#messages{
+    padding-top: 20px;
+}
+select.form-control{
+    height: 500px;
+}
+
+.show>dl {
+	display: block;
+	width: 100%;
+	border: 2px solid lightskyblue;
+	overflow: hidden;
+	margin: 5px auto;
+	
+}
+
+.show>dl>dt {
+	
+	display: block;
+	width: 11%;
+	height: 70px;
+	float: left;
+	text-align: center;
+}
+
+.show>dl>dt>img {
+	margin-top: 4px;
+	width: 50%;
+	border: 1px dashed yellow;
+	border-radius: 50%;
+}
+
+.show>dl>dt>p {
+	font-size: 12px;
+	color: orangered;
+	font-family:"微软雅黑";
+	font-weight: 300;
+	line-height: 25px;
+	
+}
+
+.show>dl>dd {
+	display: block;
+	width: 78%;
+	float: left;
+	margin: 4px 3px;
+	border: 1px dashed dodgerblue;
+	border-radius: 10px;
+	padding: 5px;
+}
+
+.delect.btn.btn-danger {
+	float: left;
+	margin: 20px auto;
+	width: 8%;
+}
+
+.show>dl>dd>span {
+	color: #ccc;
+	font-size: 12px;
+}
+
+/* .btn-top{
+	margin-top:200px;
+} */

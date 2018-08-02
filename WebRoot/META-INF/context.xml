@@ -1,0 +1,31 @@
+<!-- The contents of this file will be loaded for each web application -->
+<Context>
+
+    <!-- Default set of monitored resources -->
+    <WatchedResource>WEB-INF/web.xml</WatchedResource>
+	
+	<!-- 
+	    tomcat连接池：只能在tomcat容器下使用
+	          
+	    name：配置数据源名称（jndi的数据源名称:JNDI(Java Naming and Directory Interface,Java命名和目录接口)）
+		auth：包含Container和Application2个值，Container表示交由tomcat容器创建，Application交由应用工程创建
+		type：使用的数据源类型
+		driverClassName：数据库驱动
+		maxActive:连接池最大激活的连接数，设为0表示无限制
+		maxIdle:连接池中最多可空闲的连接数
+		maxWait:为连接最大的等待时间，单位毫秒，如果超过此时间将接到异常。设为-1表示无限制
+	 -->
+    <Resource 
+    	name="jdbc/emp"
+    	auth="Container" 
+    	type="javax.sql.DataSource" 
+    	driverClassName="oracle.jdbc.driver.OracleDriver" 
+    	url="jdbc:oracle:thin:@localhost:1521:orcl" 
+    	username="scott" 
+    	password="tiger" 
+    	maxActive="100" 
+    	maxIdle="100"
+    	maxWait="10000"
+    	 />
+
+</Context>

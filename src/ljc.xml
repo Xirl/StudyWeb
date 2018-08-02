@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<struts>
+    <!--
+        package：包，用于对Action进行封装
+        name：包名，根元素下可以有多个包，彼此不能重名
+        extends：继承，用于指定继承的包，相当于将继承包下的配置信息复制到当前包
+        namespace：命名空间，用于规定Action的访问路径，必须“/”开头    
+    -->  
+    <package name="User" namespace="../ljc" extends="struts-default">
+        <!--action：业务控制器，用于注册业务控制器组件
+            name：action名称，用于规定Action的访问路径
+            class：业务控制器组件，用于指定业务控制器对应的类
+            method：方法，用于指定访问当前action时要调用的方法
+            *请求URL：http://ip:port/projectName/namespace/ActionName.action
+        -->
+        <action name="login" class="com.ljc.action.UserAction" method="login">
+        	<result name="success" type="dispatch">/homepage.jsp</result>
+        	<result name="input" type="dispatch">/homepage.jsp</result>
+        </action >
+        <action name="register" class="com.ljc.action.UserAction" method="register">
+        	<result name="success" type="dispatch">/register.jsp</result>
+        </action >
+        <action name="selectloginName" class="com.ljc.action.UserAction" method="selectloginName">
+        	<result name="success" type="dispatch">/register.jsp</result>
+        </action >
+        <action name="userInsert" class="com.ljc.action.UserAction" method="userInsert">
+        	<result name="success" type="dispatch">/register.jsp</result>
+        	<result name="input" type="dispatch">/register.jsp</result>
+        </action >
+         <action name="setdata" class="com.ljc.action.UserAction" method="setdata">
+    	 	<result name="success" type="dispatch">/updateperson.jsp</result>
+        	<result name="input" type="dispatch">/testhompage.jsp</result>
+    	 </action>
+         <action name="update" class="com.ljc.action.UserAction" method="update">
+         	<result name="success" type="dispatch">/personalinfo.jsp</result>
+        	<result name="input" type="dispatch">/updateperson.jsp</result>
+         </action>
+         <action name="clear" class="com.ljc.action.UserAction" method="clear"></action>
+         <action name="updatepassword" class="com.ljc.action.UserAction" method="updatepassword"></action>
+         
+    </package>
+   	<package name="Data" namespace="/ljc" extends="struts-default">
+    	 <action name="select" class="com.ljc.action.DataAction" method="select"></action>
+    	 <action name="homepage" class="com.ljc.action.DataAction" method="homepage">
+    	 		<result name="success" type="dispatch">/testhomepage.jsp</result>
+    	 </action>
+    	 <action name="findName" class="com.ljc.action.DataAction" method="findName"></action>
+    	 <action name="findData" class="com.ljc.action.DataAction" method="findData">
+    	 	<result name="success" type="dispatch">/course.jsp</result>
+        	<result name="input" type="dispatch">/testhompage.jsp</result>
+    	 </action>
+    	 <action name="getDataTypeName" class="com.ljc.action.DataAction" method="getDataTypeName"></action>
+    	 <action name="selectDataDetial" class="com.ljc.action.DataAction" method="selectDataDetial"></action>
+    	 <action name="findvedio" class="com.ljc.action.DataAction" method="findvedio"></action>
+    	  <action name="findDataName" class="com.ljc.action.DataAction" method="findDataName"></action>
+    	  <action name="findTitle" class="com.ljc.action.DataAction" method="findTitle"></action>
+    </package>
+    	<package name="DownLoad" namespace="../ljc" extends="struts-default">
+    	<action name="downvedio" class="com.ljc.action.DownLoadAction" method="downvedio"></action>
+    	<action name="uploadhead" class="com.ljc.action.DownLoadAction" method="uploadhead">
+    		<result name="success" type="dispatch">/updateperson.jsp</result>
+        	<result name="input" type="dispatch">/updateperson.jsp</result>
+    	</action>
+    </package>
+</struts>
